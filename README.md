@@ -2,7 +2,9 @@
 
 ##### Credits #####
 secp256k1 code taken and used without modification from bitcoin-core / secp256k1: https://github.com/bitcoin-core/secp256k1.git
+
 sha256 code taken from http://www.zedwood.com/article/cpp-sha256-function (see LICENSE.txt)
+
 I modified the sha256(std::string input) function to a void writing a c string in place, using a c string as input.
 I also modified the sha256 to output the raw bytes to the c string rather than a hex string representation, as this is the form
 required by secp256k1.
