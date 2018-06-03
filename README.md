@@ -1,5 +1,6 @@
 # ECC_multisig_test
 Compile and test SECP256k1 library first:
+
 	$ cd secp256k1-master
 	$ ./autogen.sh
 	$ ./configure
@@ -7,9 +8,11 @@ Compile and test SECP256k1 library first:
 	$ ./tests
 
 Then, back in the HEAD directory, compile the simulation program:
+
 	$ make
 
 Then run the program with
+
 	$ ./simulate <message> <num_users> <num_required_signatures> <runs>
 
 e.g.
